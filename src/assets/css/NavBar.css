@@ -1,0 +1,25 @@
+.navbar {
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none; /* Removes bullet points from a <uL>*/
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures the list items are aligned horizontally */
+  justify-content: flex-end; /* Aligns the items to the right */
+  gap: 15px; /* Adds spacing between the items */
+}
+
+.navbar li {
+  list-style-type: none; /* Ensures no bullet points on li elements */
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.navbar a:hover {
+  border-radius: 5px;
+}
