@@ -1,14 +1,12 @@
 import React from "react";
 
 import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
 
 import "../assets/css/HomePage.css";
 
 function HomePage() {
   return (
     <div>
-      <NavBar />
       <div className="home-page">
         <div className="profile">
           <img

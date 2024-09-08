@@ -1,27 +1,25 @@
 .navbar {
-  background-color: #333;
   padding: 10px;
 }
 
 .navbar ul {
-  list-style-type: none;
+  list-style-type: none; /* Removes bullet points from a <uL>*/
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 15px;
+  display: flex; /* Ensures the list items are aligned horizontally */
+  justify-content: flex-end; /* Aligns the items to the right */
+  gap: 15px; /* Adds spacing between the items */
 }
 
 .navbar li {
-  display: inline;
+  list-style-type: none; /* Ensures no bullet points on li elements */
 }
 
 .navbar a {
-  color: white;
   text-decoration: none;
   padding: 8px 16px;
 }
 
 .navbar a:hover {
-  background-color: #575757;
   border-radius: 5px;
 }

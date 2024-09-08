@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <Router>
-      {/* The Navbar will be rendered on every page */}
+      {/* Have the Navbar will be rendered on every page */}
       <NavBar />
 
       {/* Define routes for the different pages */}
@@ -15,7 +15,6 @@ function App() {
         {/*Set HomePage as the default landing page */}
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
-        {/* Add more routes as needed */}
       </Routes>
     </Router>
   );
