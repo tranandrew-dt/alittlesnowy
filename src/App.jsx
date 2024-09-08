@@ -1,12 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./containers/About";
 import HomePage from "./containers/HomePage";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <Router>
+      {/* The Navbar will be rendered on every page */}
+      <NavBar />
+
+      {/* Define routes for the different pages */}
+      <Routes>
+        {/*Set HomePage as the default landing page */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 
