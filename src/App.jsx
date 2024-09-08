@@ -5,17 +5,19 @@ import HomePage from "./containers/HomePage";
 import NavBar from "./components/NavBar";
 
 function App() {
-  const rootPath = "/alittlesnowy";
+  const basename =
+    process.env.NODE_ENV === "development" ? "/" : "/alittlesnowy";
+
   return (
-    <Router>
+    <Router basename={basename}>
       {/* Have the Navbar will be rendered on every page */}
       <NavBar />
 
       {/* Define routes for the different pages */}
       <Routes>
         {/*Set HomePage as the default landing page */}
-        <Route path={rootPath + "/"} element={<HomePage />} />
-        <Route path={rootPath + "/about"} element={<About />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
