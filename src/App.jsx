@@ -5,8 +5,10 @@ import HomePage from "./containers/HomePage";
 import NavBar from "./components/NavBar";
 
 function App() {
+  const basename = process.env.NODE_ENV === "production" ? "/alittlesnowy" : "";
+
   return (
-    <Router>
+    <Router basename={basename}>
       {/* Have the Navbar will be rendered on every page */}
       <NavBar />
 
