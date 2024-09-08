@@ -1,0 +1,30 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh; /* Optional to center vertically */
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.profile-image {
+  width: 150px;
+  height: auto;
+}
+
+.profile-info {
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.6;
+}
