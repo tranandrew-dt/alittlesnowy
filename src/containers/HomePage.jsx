@@ -10,7 +10,7 @@ function HomePage() {
       <div className="home-page">
         <div className="profile">
           <img
-            src="images/snow-clipart-penguin-in-winter-snow-modified.png"
+            src={`${process.env.PUBLIC_URL}/images/snow-clipart-penguin-in-winter-snow-modified.png`}
             alt="penguin in snow"
             className="profile-image"
           />
